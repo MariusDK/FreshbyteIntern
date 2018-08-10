@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LoginAppRelativeLayout</string>
+    <string name="title_activity_register">Register</string>
+    <string name="ok">OK</string>
+</resources>

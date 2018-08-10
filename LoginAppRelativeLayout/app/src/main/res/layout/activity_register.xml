@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/id_textRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="32dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Email_Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/id_textRegister"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/PasswordInput1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/Email_Input"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/PasswordInput2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/PasswordInput1"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/RegisterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Register"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/PasswordInput2"/>
+    </RelativeLayout>
+</ScrollView>

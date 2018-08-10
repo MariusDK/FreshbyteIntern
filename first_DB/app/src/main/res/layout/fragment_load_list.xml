@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoadList"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/list_id"
+        android:layout_width="match_parent"
+        android:layout_height="439dp">
+
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/deleteActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_delete"
+        app:backgroundTint="#0040ff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_id" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/updateActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginRight="128dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:src="@android:drawable/button_onoff_indicator_on"
+        app:backgroundTint="@android:color/holo_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deleteActionButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_id" />
+</android.support.constraint.ConstraintLayout>
